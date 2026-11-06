@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 * {
   margin: 0;
@@ -23,8 +23,13 @@
 /* BODY */
 
 
-h1, h2, h3{
+h1, h2{
   font-family: 'Henny Penny', cursive;
+  letter-spacing: 1px;
+}
+
+h2, h3 {
+  font-family: 'Concert One', serif;
   letter-spacing: 1px;
 }
 
@@ -143,7 +148,7 @@ nav#menu ul li a:hover::after {
 #search-input {
   width: 150%;
   max-width: 300px;
-  color: var(--Dark);
+  color: var(--White);
   text-align: left;
   text-indent: 10px;
 }
@@ -160,6 +165,39 @@ nav#menu ul li a:hover::after {
   font-size: 28px;
   margin-left: 30px;
 }
+
+
+nav#menu {
+  transition: background-color 0.4s ease;
+}
+
+nav#menu.scrolled {
+  background: var(--Black);
+}
+
+nav#menu.scrolled .logo,
+nav#menu.scrolled ul li a,
+nav#menu.scrolled .menu-toggle {
+  color: var(--White);
+}
+
+nav#menu.scrolled .fa-solid,
+nav#menu.scrolled .fas {
+  color: var(--White);
+}
+
+nav#menu.scrolled .fa-solid:hover,
+nav#menu.scrolled .fas:hover {
+  color: var(--Dark);
+}
+
+nav#menu.scrolled .search input {
+  background-color: var(--White);
+  color: var(--Black);
+}
+
+/* START */
+
 
 .start {
   height: 90vh;
@@ -213,7 +251,154 @@ nav#menu ul li a:hover::after {
 }
 
 
+/* PAISES */
+
+
+.paises-select {
+  padding: 40px 15px 0 15px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.paises-select-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.paises-select-list a {
+  display: block;
+  padding: 14px 32px;
+  font-family: 'Concert One', sans-serif;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+  color: var(--Dark);
+  background: transparent;
+  border: 2px solid var(--Dark);
+  border-radius: 999px;
+  transition: background 0.25s, color 0.25s, transform 0.25s;
+}
+
+.paises-select-list a:hover {
+  background: var(--Dark);
+  color: var(--White);
+  transform: translateY(-5px);
+}
+
+.paises-select-list a:focus-visible {
+  outline: 3px solid var(--Black);
+  outline-offset: 2px;
+}
+
+
 /* CARDS */
+
+
+.title-nov {
+  color: var(--Black);
+  justify-items: left;
+  font-size: 32px;
+  margin: 60px 0 0 55px;
+}
+
+.card-back {
+  padding: 135px 20px 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 125px 18px;
+  justify-items: center;
+  align-items: start;
+ }
+
+.card-back .title {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-back .title h2 {
+  color: var(--Black);
+}
+
+.card {
+  width: 295px;
+  height: min-content;
+  padding: 25px;
+  background: var(--White);
+  border-radius: 15px;
+  border: solid 3px var(--Dark);
+}
+
+.card .card-img {
+  width: 100%;
+  text-align: center;
+}
+
+.card .card-img img {
+  height: 200px;
+  display: block;
+  margin: -150px auto 15px auto; 
+  transition: .3s;
+  filter: drop-shadow(0 8px 8px #13062a);
+}
+
+.card:hover .card-img img {
+  height: 240px;
+}
+
+.card .card-title {
+  color: var(--Black);
+  font-size: 28px;
+  letter-spacing: -.5px;
+  margin-top: -5px;
+}
+
+.card .card-title p {
+  color: var(--Black);
+  font-size: 18px;
+  margin-top: 1px;
+  letter-spacing: -.5px;
+}
+
+.card .card-detalles {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.card .card-detalles span {
+  color: var(--Black);
+  font-size: 16px;
+}
+
+.card .card-detalles p {
+  color: var(--Black);
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: -1px;
+}
+
+.card button {
+  width: 100%;
+  height: 40px;
+  color: var(--Dark);
+  border: 3px solid var(--Dark);
+  padding: 0 18px;
+  background: transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.card button:hover {
+  background: var(--Dark);
+  color: var(--White);
+  scale: 1.07;
+  transform: translateY(5px);
+}
 
 
 /* FOOTER */

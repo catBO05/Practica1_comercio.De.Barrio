@@ -3,13 +3,28 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Beatly</title>
+        <title>Rincón Latino</title>
         <link rel="icon" href="MEDIA/IMG/favicon.svg">
         <link href="CSS/style.css" rel="Stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="JS/Script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+        <!-- THEME TAILWIND -->
+        <style type="text/tailwindcss">
+        @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Concert+One&display=swap');
+        @theme {
+            --color-white-cream: #FFFDF6;
+            --color-dark: #b60747;
+            --color-black-custom: #1A1A1A;
+
+            --font-henny: 'Henny Penny', cursive;
+            --font-concert: 'Concert One', serif;
+            --font-mukta: 'Mukta Malar', sans-serif;
+        }
+        </style>
     </head>
 
 <body>
@@ -22,10 +37,10 @@
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul id="nav-links">
-                    <li><a href="#">PAÍSES</a></li>
-                    <li><a href="#">NOVEDADES</a></li>
-                    <li><a href="#">DULCES</a></li>
-                    <li><a href="#">SALADOS</a></li>
+                    <li><a href="#paises">PAÍSES</a></li>
+                    <li><a href="#novedades">NOVEDADES</a></li>
+                    <li><a href="#dulces">DULCES</a></li>
+                    <li><a href="#salados">SALADOS</a></li>
                 </ul>
 
                 <div class="search">
@@ -55,15 +70,444 @@
         </div>
     </div>
 
-    <section class="paises">
-
+    <section class="paises-select" id="paises">
+        <ul class="paises-select-list">
+            <li><a href="productos.html">Chile</a></li>
+            <li><a href="productos.html">Perú</a></li>
+            <li><a href="productos.html">Colombia</a></li>
+            <li><a href="productos.html">Venezuela</a></li>
+            <li><a href="productos.html">Argentina</a></li>
+        </ul>
     </section>
 
     <!-- CARDS -->
-    <section>
-
+    <section id="novedades">
+        <div class="title-nov">
+            <h2>Novedades</h2>
+        </div>
+        
+        <div class="card-back">
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/71UXicS5tUL.png" alt="Morochas">
+                </div>
+                <div class="card-title">
+                    <h3>Morochas</h3>
+                    <p>Galleta de vainilla bañada en chocolate</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€5,59 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>180gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/IMG_0616.png" alt="Doña Pepa">
+                </div>
+                <div class="card-title">
+                    <h3>Doña Pepa</h3>
+                    <p>Galleta de vainilla bañada en chocolate y grageas</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€26,25 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>690gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/guaguitas.png" alt="Guaguitas">
+                </div>
+                <div class="card-title">
+                    <h3>Guaguitas</h3>
+                    <p>Malvaviscos o golosinas blandas y esponjosas con forma de bebé</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€9,03 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>300gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/criollita.png" alt="Criollitas">
+                </div>
+                <div class="card-title">
+                    <h3>Criollitas</h3>
+                    <p>Galleta de vainilla bañada en chocolate y grageas</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€4,92 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>175gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
     </section>
 
+    <section id="dulces">
+        <div class="title-nov">
+            <h2>DULCES</h2>
+        </div>
+        
+        <div class="card-back">
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/IMG_0616.png" alt="Doña Pepa">
+                </div>
+                <div class="card-title">
+                    <h3>Doña Pepa</h3>
+                    <p>Galleta de vainilla bañada en chocolate y grageas</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€26,25 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>690gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/71UXicS5tUL.png" alt="Morochas">
+                </div>
+                <div class="card-title">
+                    <h3>Morochas</h3>
+                    <p>Galleta de vainilla bañada en chocolate</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€5,59 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>180gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/alfi.png" alt="Alfi">
+                </div>
+                <div class="card-title">
+                    <h3>Alfi</h3>
+                    <p>un alfajor tipo galleta relleno de manjar y cubierto de chocolate</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€9,95 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>200gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/frac.png" alt="Frac">
+                </div>
+                <div class="card-title">
+                    <h3>Frac</h3>
+                    <p>Galletas tipo sándwich. Dos tapas con relleno cremoso en el centro</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€2,99 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>175gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/guaguitas.png" alt="Guaguitas">
+                </div>
+                <div class="card-title">
+                    <h3>Guaguitas</h3>
+                    <p>Malvaviscos o golosinas blandas y esponjosas con forma de bebé</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€9,03 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>300gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/la-iberica-mini-milky.png" alt="Mini-Milky">
+                </div>
+                <div class="card-title">
+                    <h3>Mini Milky</h3>
+                    <p>Línea de barras y tabletas de chocolate con leche</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€17,40 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>200gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/criollita.png" alt="Criollitas">
+                </div>
+                <div class="card-title">
+                    <h3>Criollitas</h3>
+                    <p>Galleta de vainilla bañada en chocolate y grageas</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€4,92 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>175gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/princesa.png" alt="Princesa">
+                </div>
+                <div class="card-title">
+                    <h3>Princesa</h3>
+                    <p>Tradicional chocolatina peruana elaborada por Nestlé desde 1943</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€4,92 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>540gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="salados">
+        <div class="title-nov">
+            <h2>SALADOS</h2>
+        </div>
+        
+        <div class="card-back">
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/snack mix.webp" alt=Snack.mix">
+                </div>
+                <div class="card-title">
+                    <h3>Snack Mix</h3>
+                    <p>Mezcla de papas fritas, ramitas, maní y palitos salados</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€2,75 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>320gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/Post-para-planeador-de-eventos-estilo-minimalista.png332.png" alt="Chizitos">
+                </div>
+                <div class="card-title">
+                    <h3>Chizitos</h3>
+                    <p>snack o aperitivo salado de maíz inflado con sabor a queso</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€2.50 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>190gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/nativas.png" alt="Inka chips nativas">
+                </div>
+                <div class="card-title">
+                    <h3>Inka Chips N.</h3>
+                    <p>Hechas con papas andinas nativas</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€2.99 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>50gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/Ramitas.png" alt="Ramitas">
+                </div>
+                <div class="card-title">
+                    <h3>Ramitas</h3>
+                    <p>Palitos de harina de trigo con una forma irregular y alargada</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€7,24 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>250gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/cheese tris.png" alt="Criollitas">
+                </div>
+                <div class="card-title">
+                    <h3>Cheese tris</h3>
+                    <p>Hecho a base de maíz inflado y cubierto con un polvo de queso</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€3,50 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>120gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/lays pollo a la brasa.png" alt="lays pollo a la brasa">
+                </div>
+                <div class="card-title">
+                    <h3>Lays de pollo</h3>
+                    <p>Recrean el famoso sabor del pollo a la brasa</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€3,50 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>130gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/camote.png" alt="Natuchips camote">
+                </div>
+                <div class="card-title">
+                    <h3>Camote</h3>
+                    <p>Hojuelas o rodajas de camote (batata) frito y crujiente</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€4,50 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>135gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="MEDIA/IMG/bembos.png" alt="Inka Chips Bembos">
+                </div>
+                <div class="card-title">
+                    <h3>Inka Chips B.</h3>
+                    <p>Patatas sazonadas para recrear el sabor de Bembos</p>
+                </div>
+                <div class="card-detalles">
+                    <div class="price">
+                        <span>Precio</span>
+                        <p>€4,92 EUR</p>
+                    </div>
+                    <div class="peso">
+                        <span>Peso</span>
+                        <p>120gr</p>
+                    </div>
+                </div>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+    
     <footer class="footer">
             <div class="footer-container">
                 <div class="footer-logo">
@@ -105,5 +549,71 @@
             </div>
             <p class="copy"> &copy; 2026 Rincón Latino. Todos los derechos reservados.</p>
         </footer>
+        <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const raiz = document.documentElement;
+
+      // --- MENÚ RESPONSIVE ---
+      const btnMenu = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+      const icono = btnMenu ? btnMenu.querySelector('i') : null;
+
+      function cerrarMenu() {
+        if (!navLinks) return;
+        navLinks.classList.add('hidden');
+        navLinks.classList.remove('flex');
+        if (icono) icono.className = 'fas fa-bars';
+        if (btnMenu) btnMenu.setAttribute('aria-expanded', 'false');
+      }
+
+      if (btnMenu && navLinks) {
+        btnMenu.addEventListener('click', function () {
+          const abierto = !navLinks.classList.contains('hidden');
+          if (abierto) {
+            cerrarMenu();
+          } else {
+            navLinks.classList.remove('hidden');
+            navLinks.classList.add('flex');
+            if (icono) icono.className = 'fas fa-times';
+            btnMenu.setAttribute('aria-expanded', 'true');
+          }
+        });
+
+        navLinks.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', cerrarMenu);
+        });
+      }
+
+      const menu = document.getElementById('menu');
+      if (menu) {
+        const alScroll = function () {
+          if (window.scrollY > 20) {
+            menu.classList.add('shadow-md');
+          } else {
+            menu.classList.remove('shadow-md');
+          }
+        };
+        window.addEventListener('scroll', alScroll, { passive: true });
+        alScroll();
+      }
+
+      // CLARO OSCURO
+      const btnTema = document.getElementById('btn-tema');
+      if (btnTema) {
+        btnTema.addEventListener('click', function () {
+          const oscuro = raiz.classList.toggle('dark');
+          try { localStorage.setItem('tema', oscuro ? 'oscuro' : 'claro'); } catch (e) {}
+        });
+      }
+
+      const mq = window.matchMedia('(prefers-color-scheme: dark)');
+      const alCambiarSistema = function (e) {
+        try { if (localStorage.getItem('tema')) return; } catch (err) {}
+        raiz.classList.toggle('dark', e.matches);
+      };
+      if (mq.addEventListener) mq.addEventListener('change', alCambiarSistema);
+      else if (mq.addListener) mq.addListener(alCambiarSistema);
+    });
+  </script>
 </body>
 </html>
