@@ -12,32 +12,18 @@
 }
 
 :root {
-  --main: #E1FF2D;
+  --main: #FFFDF6;
 
-  --negro: #000005;
+  --negro: #b60747;
 
-  --blanco: #F2F2F2;
+  --blanco: #1A1A1A;
 }
 
 
 /* BODY */
 
 
-h1, h2, h3{
-  font-family: 'Henny Penny', cursive;
-  letter-spacing: 1px;
-}
 
-h4, h5, h6, p, a, span, li {
-  font-family: 'Mukta Malar', sans-serif;
-  letter-spacing: 1px;
-}
-
-body {
-  background-color: var(--White);
-  min-height: 100vh;
-  overflow-x: hidden;
-}
 
 
 /* FORM */
