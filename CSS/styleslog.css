@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap');
+
 
 * {
   margin: 0;
@@ -21,20 +23,19 @@
 /* BODY */
 
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bricolage Grotesque', cursive;
+h1, h2, h3{
+  font-family: 'Henny Penny', cursive;
+  letter-spacing: 1px;
 }
 
-p, a, ul, li, span {
-  font-family: 'Manrope', cursive;
+h4, h5, h6, p, a, span, li {
+  font-family: 'Mukta Malar', sans-serif;
+  letter-spacing: 1px;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--White);
   min-height: 100vh;
-  background-color: var(--negro);
   overflow-x: hidden;
 }
 
